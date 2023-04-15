@@ -3,8 +3,8 @@ import React from "react";
 import { BsChevronDown } from "react-icons/bs";
 
 interface Props {
-  onSelectSortOrder: (sortOrder: String) => void;
-  sortOrder: String;
+  onSelectSortOrder: (sortOrder: string) => void;
+  sortOrder: string;
 }
 
 const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
@@ -24,7 +24,7 @@ const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-        Order by: {currentSortOrder?.label || 'Relevance'}
+        Order by: {currentSortOrder?.label || "Relevance"}
       </MenuButton>
       <MenuList>
         {sortOrders.map((order) => (
